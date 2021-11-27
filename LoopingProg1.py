@@ -25,3 +25,10 @@ for i in range(0,len(Sentence)):
     elif (str[i] >= 'a' and str[i] <= 'z'):  
         consonants = consonants + 1;    
 
+#calling word
+Num_of_word = len(word_)
+
+# total number of word, vowels and consonant 
+print("The number of word is",Num_of_word)
+print("The number of vowels is",vowels)
+print("The number of consonant is",consonants)
