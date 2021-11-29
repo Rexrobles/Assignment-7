@@ -11,3 +11,6 @@
 
 # Greetings
 print("Hello! This Program will you if your password is valid")
+
+# ask input from the user
+password = input("Please enter your password: ")
