@@ -14,3 +14,20 @@ print("Hello! This Program will you if your password is valid")
 
 # ask input from the user
 password = input("Please enter your password: ")
+
+character = len(password)
+SpclChar, upper, lower, digit = 0, 0, 0, 0
+
+if (len(password) >=15):
+    for i in password:
+        if (i.islower()):
+            lower +=1
+        if (i.isdigit()):
+            digit +=1
+        if (i.isupper()):
+            upper +=1
+        if (i == "#" or i == "@" or i == "=" or i == "!" or i == "$" or i == "&" or i == "%" or i == "'" or i == "*" or i == "()" or i == "+ " or i == "." \
+        or i == "|" or i == """^""" or i == "{" or i == "}" or i == "[" or i == "]" or i == "_" or i == "~" or i == "," or i == "?" or i == "+"):
+            SpclChar += 1
+            
+    
