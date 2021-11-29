@@ -13,7 +13,7 @@
 print("Hello! This Program will you if your password is valid")
 
 # ask input from the user
-password = input("Please enter your password: ")
+password = input("Please enter \33[96m\33[1mPASSWORD\33[0m : ")
 
 character = len(password)
 SpclChar, upper, lower, digit = 0, 0, 0, 0
@@ -32,15 +32,15 @@ if (len(password) >=15):
             SpclChar += 1
             
     if (lower >= 1 and upper >= 1 and SpclChar >= 1 and digit >= 1):
-        print("Your password is: ")
+        print("Your \33[36m\33[1mPASSWORD\33[0m is \33[1m\33[95mVALID\33[0m!")
     if (upper < 1 ):
-        print("Oh no! Your password must contain atleast one capital letter.")
+        print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one capital letter.\33[0m") 
     if (digit < 1 ):
-        print("Oh no! Your password must contain atleast one number.")
+        print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one number.\33[0m")
     if (SpclChar < 1 ):
-        print("Oh no! Your password must contain atleast one special character.")
+        print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one special character.\33[0m")
     if (lower <= 1 and SpclChar <= 1 and digit <= 1 and upper <=1):
-        print("Sorry! The password you have enter is invalid")
+        print("Sorry! The \33[36m\33[1mPASSWORD\33[0m you have entered is \33[33m\33[1mINVALID\33[0m")
 else:
     for i in password:
         if (i.islower()):
@@ -53,12 +53,12 @@ else:
         or i == "|" or i == """^""" or i == "{" or i == "}" or i == "[" or i == "]" or i == "_" or i == "~" or i == "," or i == "?" or i == "+"):
             SpclChar += 1
             
-    print ("Oh no! Your password must have atleast fifteen characters.")
+    print ("Oh no! Your password must have \33[96m\33[1m\33[3matleast fifteen characters.\33[0m")
     if (digit < 1):
-        print ("Oh no ! Your password must contain atleast one number.")
+        print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one number.\33[0m")
     if (SpclChar < 1):
-         print("Oh no ! Your password must contain atleast one special character.")
+         print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one special character.\33[0m")
     if (upper < 1):
-        print("Oh no ! Your password must contain atleast one capital letter.")
+        print("Oh no! Your password must contain \33[36m\33[1m\33[3matleast one capital letter.\33[0m")
         
-print("Sorry! The PASSWORD you have entered is INVALID")
+print("Sorry! The \33[36m\33[1mPASSWORD\33[0m you have entered is \33[33m\33[1mINVALID\33[0m")
